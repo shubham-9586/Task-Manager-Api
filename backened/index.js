@@ -10,7 +10,7 @@ const port = 5000
 
 app.use(express.json())
 app.use('/api/auth' , require('./routes/auth'))
-// app.use('/api/notes',require('./models/Notes'))
+ app.use('/api/notes',require('./models/Notes'))
 
 
 app.listen(port, () => {
